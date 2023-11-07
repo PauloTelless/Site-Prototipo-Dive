@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/cadastro.css"> 
+    <link rel="icon" href="./ico/faveicon.ico" type="image/x-icon"> <!--Coloca o ícone na aba-->
+    <title>Dive ©</title>
+</head>
+<body>
+    <div class="box"> 
+        <div class="img-box">
+            <img src="./img/logo-formulario.png" alt="logo-dive">
+        </div>
+        <div class="form-box"> 
+            <h2>Criar Conta</h2>
+            <p>Já é cadastrado ?<a href="http://localhost:5000/login" method="GET"> Login </a> </p> <!--Essa url é para se conectar com a rota criada no flask para a página de login-->
+            <form action="http://localhost:5000/users/create" method="POST"><!--É criado um novo usuario quando o botão de cadastrar é clicado e é atualizado na função do Flask (create_user)-->
+                <div class="input-group">                                                                 
+                    <label for="nome">Nome Completo</label> <!--labels para visualizar o que está sendo pedido-->
+                    <input type="text" name="nome" id="nome" placeholder="Digite o seu nome completo" required> <!--Inputs foram aterados para conseguir resgatar os valores com o FLask-->
+                </div>                                                                              
+                <div class="input-group">   
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Digite o seu email" required>
+                </div>
+                <div class="input-group">
+                    <label for="telefone">Telefone</label> 
+                    <input type="tel" name="telefone" id="telefone" placeholder="Digite o seu telefone" required> <!--placeholders para mostrar mensagem no campo de digitação-->         
+                </div>
+                <div class="input-group w50">
+                    <label for="nome">Senha</label>
+                    <input type="password" name="senha" id="senha" placeholder="Digite a sua senha" required>
+                </div>
+                <div class="input-group w50 ">
+                    <label for="confirmarSenha">Confimar senha</label>
+                    <input type="password" id="confirmarSenha" placeholder="Confirme a senha" required>
+                </div>
+                <div class="input-group">
+                    <button>Cadastrar</button> 
+                </div> <!--Cada id em cada classe representa a variável que é resgatada no Flask para fazer a integração no banco de dados-->
+                <div class="input-div">
+                    <p>Já conhece a DIVE ?<a href="landingPage.html"> Clique aqui </a> </p> <!--Quando clica em "Clique aqui", é redirecionado para a página da landing page-->
+                </div> 
+            </form>  
+        </div>
+    </div>
+</body>
+</html>

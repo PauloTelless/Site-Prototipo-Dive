@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='perfil.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='faveicon.ico') }}" type="image/x-icon">
+    <title>Home</title>
+</head>
+<body>
+    <h1>Seja bem-vindo(a) {{usuario[1]}}!</h1>
+    <p>Email: {{usuario[2]}}</p>
+    <p>Número: {{usuario [4]}}</p>
+</body>
+</html>

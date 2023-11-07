@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Battambang:wght@300&family=Poppins:wght@100&family=Roboto:ital,wght@0,100;1,300&family=Urbanist:wght@100&display=swap');
+
+ body{
+    background-image: url(/img/background-landing-page.png);
+    color: white;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+    font-family: 'Bangers', sans-serif;
+ }
+
+ header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ #title{
+    flex-direction: column;
+    font-size: 20px;
+    line-height: 10px;
+ }
+
+ li {
+    display: inline-block;
+    text-decoration: none;
+    margin: 20px;
+    font-weight: 200; 
+    font-size: 25px;
+ }
+
+ a{
+    color: white;
+ }
+
+ a:hover{
+    color: #A4E473;
+    transition: 0.9s all;
+ }
+
+ h1{
+    font-weight: 200;
+ }
+/*Inicio main*/
+ main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+ }
+
+ h2{
+    font-weight: 200;
+    font-size: 55px;
+    line-height: 10px;
+ }
+
+span{
+    color: #A4E473;
+}
+
+
+ img{
+    width: 800px;
+    margin-top: 0px;
+    padding-left: 29px;
+ }
+
+ form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+ }
+
+ form [type="submit"]{
+    height: 50px;
+    width: 50%;
+    background-color: #153049;
+    color: white;
+    font-weight: 200;
+ }
+
+ form [type="submit"]:hover{
+    cursor: pointer;
+    color: #A4E473;
+    transition: 0.9s;
+ }
+
+ .botao-enviar{
+    font-family: 'Bangers', sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+ }
+
+ input{
+    margin-top: 20px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+    border: none;
+ }
+
+ ::placeholder{
+    font-family: 'Bangers', sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+    text-align:left
+ }
+ /*Final main*/
+
+
+/*Inicio footer*/
+ footer img{
+    max-width: 600px;
+    
+ }
+
+ footer img{
+    max-width: 600px;
+    transform: translate(0px);
+    animation: float 2s ease-in-out infinite;
+}
+/*Final footer*/
+
+
+/*Animação da foto de "conheça os nossos serviços*/
+@keyframes float {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+
+/*Inicio responsivo*/
+@media screen and (max-width: 760px) {
+    
+    #title{
+        flex-direction: column;
+        font-size: 20px;
+        line-height: 10px;
+    }
+
+    header{
+        flex-direction: column;
+    }
+
+    main{
+        flex-direction: column;
+    }
+
+    h2{
+        font-size: 38px;
+    }
+
+    form{
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    input{
+        align-self: center;
+    }
+
+    img{
+        display: none;
+    }
+
+    ul{
+        text-align: center;
+    }
+    
+}
+
+ @media screen and (max-width: 1024px) {
+    #title{
+        flex-direction: column;
+        font-size: 20px;
+        line-height: 10px;
+    }
+
+    header{
+        flex-direction: column;
+    }
+
+    main{
+        flex-direction: column;
+    }
+
+    h2{
+        font-size: 38px;
+    }
+
+    form{
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    input{
+        align-self: center;
+    }
+
+    img{
+        display: none;
+    }
+
+    ul{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    header{
+        flex-direction: column;
+    }
+
+    main{
+        flex-direction: column;
+    }
+
+    h2{
+        font-size: 38px;
+    }
+
+    form{
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    input{
+        align-self: center;
+    }
+
+    img{
+        display: none;
+    }
+
+    ul{
+        text-align: center;
+    }
+}
+/*Final responsivo*/

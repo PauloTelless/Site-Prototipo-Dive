@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Battambang:wght@300&family=Poppins:wght@100&family=Roboto:ital,wght@0,100;1,300&family=Urbanist:wght@100&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Bangers', sans-serif;
+}
+
+body{
+    background-image: url(./background-login.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.wrapper {
+    width: 420px;
+    background-color: #2D4257;
+    border-radius: 20px;
+    color: white;
+    padding: 30px 40px
+}
+
+.wrapper img{
+    max-width: 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.wrapper  .input-box{
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+    ;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    padding: 20px 45px 20px;
+}
+
+.input-box input::placeholder {
+    color: #2D4257;
+}
+
+.wrapper .btn{
+    color: #2D4257;
+    width: 100%;
+    height: 45px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+@media (max-width:500px) {
+    .wrapper{
+        max-width: 300px;
+        justify-content: center;
+    }
+
+    .wrapper img{
+        max-width: 200px;
+        
+        
+    }
+}

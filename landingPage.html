@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/landingpage.css">
+    <link rel="icon" href="./ico/faveicon.ico" type="image/x-icon">
+    <title>Conheça a Dive</title>
+</head>
+<body>
+    <header>
+        <div id="title">
+            <h1>Dive</h1>
+            <h1>Loyalty</h1>
+        </div>
+        <ul> <!--Coleção-->
+            <a href="./landingPage.html"><li>Home</li></a>
+            <a href="./servicos.html"><li>Serviços</li></a>    <!--Lista desordenada-->
+            <a href="./contatos.html"><li>Contato</li></a>
+        </ul>
+    </header>
+    <main>
+        <aside>
+            <h2>Inscreva-se agora</h2>
+            <span><h2>na Dive</h2></span>
+            <form action="http://localhost:5000/establishment/create" method="POST"> <!--O formulário é redirecionado para a rota no Flask na função (create_establishment) isso quando o botão "Enviar", com todos os cmapos preenchidos, é acioando-->
+                <input type="text" name="nome" id="nome" placeholder="Nome do estabelecimento" required>
+                <input type="email" name="email" id="email" placeholder="Digite o seu email" required>
+                <input class="botao-enviar" type="submit" name="enviar" id="enviar" value="Enviar">  <!--Inputs criados para resgatar o valor e armazenar nas variáveis no Flask-->
+            </form>
+        </aside>
+        <article>
+            <img src="./img/logo-landing-page.png" alt="logo-dive">
+        </article>
+    </main>
+    <footer>
+        <a href="./servicos.html">
+            <img src="./img/foto-conheca-servico.png">
+        </a>
+    </footer>
+</body>
+</html>
